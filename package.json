@@ -1,25 +1,36 @@
 {
-  "name": "solidstorybookts",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@types/jest": "26.0.0",
-    "@types/node": "14.0.13",
-    "solid-js": "^0.18.9",
-    "solid-scripts": "0.0.35",
-    "typescript": "3.9.5"
-  },
-  "scripts": {
+	"name": "solidapp-storybook-typescript",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@types/jest": "^26.0.0",
+		"@types/node": "14.0.13",
+		"dynamic-import": "^0.1.1",
+		"solid-js": "^0.18.8",
+		"solid-scripts": "0.0.35",
+		"typescript": "^3.9.5"
+	},
+	"scripts": {
     "start": "solid-scripts start",
     "build": "solid-scripts build",
     "test": "solid-scripts test",
-    "check-types": "tsc"
+    "check-types": "tsc",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
-  "browserslist": [
-    "Chrome 74",
-    "Firefox 63",
-    "Safari 11",
-    "Edge 17",
-    "Node 10"
-  ]
+	"browserslist": [
+		"Chrome 74",
+		"Firefox 63",
+		"Safari 11",
+		"Edge 17",
+		"Node 10"
+	],
+	"devDependencies": {
+		"@babel/core": "^7.10.2",
+		"@babel/preset-stage-3": "^7.8.3",
+		"@storybook/html": "^5.3.19",
+		"babel-loader": "^8.1.0",
+		"jest": "^26.0.1",
+		"ts-jest": "^26.1.0"
+	}
 }
