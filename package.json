@@ -1,0 +1,25 @@
+{
+  "name": "solidstorybookts",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@types/jest": "26.0.0",
+    "@types/node": "14.0.13",
+    "solid-js": "^0.18.9",
+    "solid-scripts": "0.0.35",
+    "typescript": "3.9.5"
+  },
+  "scripts": {
+    "start": "solid-scripts start",
+    "build": "solid-scripts build",
+    "test": "solid-scripts test",
+    "check-types": "tsc"
+  },
+  "browserslist": [
+    "Chrome 74",
+    "Firefox 63",
+    "Safari 11",
+    "Edge 17",
+    "Node 10"
+  ]
+}
